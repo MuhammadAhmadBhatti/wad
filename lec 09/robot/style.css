@@ -5,6 +5,8 @@ h1 {
 
 .robots {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .head,
@@ -44,7 +46,6 @@ h1 {
     height: 125px;
     border-radius: 100px;
 }
-
 
 .left_arm {
     margin-right: 10px;
