@@ -25,7 +25,7 @@ function createListItem(){
     var li = document.createElement("li");
     var btn = document.createElement("button");
     li.append(document.createTextNode(input.value));
-    btn.append(document.createTextNode("Delete"));
+    btn.append(document.createTextNode("delete"));
     btn.classList.add("del");
     li.append(btn);
     ul.append(li);

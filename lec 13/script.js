@@ -1,25 +1,35 @@
-var database=
-{
-    user:"ahmad",
-    age:19
-}
+var database= [
+    {user:"ahmad",
+    password:"123"},
+    {user:"bhatti",
+    password:"456"},
+    {user:"ali",
+    password:"789"}];
 
 var newsfeed=[
     {
         user:"usman",
         status:"happy"
-    }
-]
-
-var x=function () {
-    n=prompt("eneter name");
-    a=prompt("enter age");
-    if(n===database.user && a===Number(database.age))
+    },
     {
-        console.log(newsfeed);
+        user:"haider",
+        status:"upset"
     }
-    else
+];
+var x=function()
+{
+    var n=prompt("enter name");
+    var a=prompt("enter password");
+    for(var i=0;i<database.length ;i++)
     {
-        alert("wrong");
+        if(n===database[i].user && a===database[i].password)
+        {
+            console.log(newsfeed);
+        }
+        else
+        {
+            console.log("wrong user name or password");
+        }
     }
 }
+x();
