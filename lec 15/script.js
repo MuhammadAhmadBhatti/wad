@@ -16,6 +16,9 @@ var ul = document.getElementsByTagName("ul")[0];
 var listItems = document.getElementsByTagName("li");
 var deleteButtons = document.getElementsByClassName("del");
 
+addDoneListener();
+addDeleteListener();
+
 function inputLength(){
     if(input.value.length > 0 )
         return true;
@@ -62,8 +65,7 @@ function addDeleteListener(){
         deleteButtons[i].addEventListener("click",deleteItem);
     }
 }
-addDeleteListener();
-addDoneListener();
+
 
 
 
